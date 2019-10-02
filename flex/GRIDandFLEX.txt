@@ -1,4 +1,4 @@
-GRIDS ---
+GRIDS and Flex ---
 
 1) Grid is 1D
 
