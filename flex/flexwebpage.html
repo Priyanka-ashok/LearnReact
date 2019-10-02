@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flex Based WebPage</title>
+    <style>
+      .flex-main {
+        color: Blue;
+        text-align: center;
+      }
+      .navigation-tab {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-top: 0;
+      }
+      .navigation-tab,
+      .footer-tab {
+        display: flex;
+        list-style-type: none;
+        justify-content: flex-end;
+        background-color: aquamarine;
+        height: 50px;
+        align-items: center;
+      }
+      .first-nav-li {
+        flex-grow: 1;
+      }
+      .navigation-tab li,
+      .footer-tab li {
+        flex-basis: 10%;
+      }
+      .footer-tab {
+        justify-content: center;
+      }
+      content {
+        display: flex;
+        justify-content: center;
+      }
+      .Flex-container {
+        background-color: antiquewhite;
+        height: 300px;
+        width: 30%;
+        border: 1px solid black;
+        margin: 10px;
+      }
+      .h1-tag {
+        font-size: 20px;
+        text-transform: capitalize;
+        color: blueviolet;
+        text-align: center;
+        overflow: hidden;
+      }
+      .h1-tag:after {
+        content: "";
+        display: inline-block;
+        width: 300px;
+        height: 100%;
+        border-bottom: 2px solid red;
+      }
+      .flex-contents li {
+        padding-bottom: 20px;
+        line-height: 25px;
+      }
+      img {
+        height: 500px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="flex-main">FLEX</h1>
+    <header>
+      <ul class="navigation-tab">
+        <li class="first-nav-li">Home</li>
+        <li>Contact Us</li>
+        <li>Address</li>
+        <li>Courses</li>
+      </ul>
+    </header>
+    <content>
+      <div class="Flex-container">
+        <h1 class="h1-tag">Basic Concept of Flex</h1>
+        <ul class="flex-contents">
+          <li>Flex is based on flex-flow directions</li>
+          <li>Default value : flex-direction: row;</li>
+        </ul>
+      </div>
+      <div class="Flex-container">
+        <h1 class="h1-tag">Flex Container</h1>
+        <ul class="flex-contents">
+          <li>Display: flex ; This defines the Flex-container</li>
+          <li>
+            Flex-Properties : justify-content, align-items, align-self,
+            flex-grow, order, flex-basis, flex-shrink
+          </li>
+        </ul>
+      </div>
+      <div class="Flex-container">
+        <h1 class="h1-tag">Flex Flow Shorthand</h1>
+        <ul class="flex-contents">
+          <li>It takes the three flex properties</li>
+          <li>flex grow, flex-shrink,flex-basis</li>
+          <li>Example : 1 1 150px;</li>
+        </ul>
+      </div>
+    </content>
+    <img src="../../Downloads/android-wallpaper-city-dark-248159.jpg" />
+    <footer>
+      <ul class="footer-tab">
+        <li>Terms</li>
+        <li>Policy</li>
+        <li>Cookies</li>
+      </ul>
+    </footer>
+  </body>
+</html>
