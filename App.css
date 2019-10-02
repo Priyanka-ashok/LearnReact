@@ -1,0 +1,132 @@
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.navbar {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+}
+.logo {
+  order: 2;
+  flex-grow: 1;
+}
+.zil-logo {
+  height: 70px;
+}
+.left-list {
+  order: 1;
+}
+.right-list {
+  order: 3;
+}
+.left-list,
+.right-list {
+  display: flex;
+  list-style-type: none;
+  flex-grow: 1;
+  font-size: 20px;
+  font-weight: 600;
+  color: rebeccapurple;
+}
+li {
+  padding: 10px;
+}
+.zil-headline {
+  font-size: 20px;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 72px auto;
+  max-width: 500px;
+  line-height: 35px;
+}
+.borderwidth{
+  width: 174px;
+  margin: 20px auto;
+  height: 2px;
+  background-color: rgb(255, 210, 55);
+}
+.grid-styling{
+  height: 500px;
+  width: 500px;
+  background-color:  aquamarine;;
+  margin: 90px auto;
+  transition: transform .5s;
+}
+.grid-styling h1 {
+  text-align: center;
+  padding: 60px;
+}
+.grid-styling:hover{
+ transform: scale(1.1)
+}
+.hamburger{
+  margin-top: 15px;
+}
+.hamburger > div{
+  width: 30px;
+  height: 5px;
+  background-color: black;
+  margin: 1px;
+}
+.hamburger-popup{
+float: right;
+}
+.hamburger-popup li {
+text-align: right;
+list-style-type: none;
+font-size: 20px;
+color: crimson;
+font-weight: 600;
+}
+.blank {
+  background-color:  aquamarine;
+  margin-bottom: 10px;
+}
+.blank-grids {
+  height: 200px;
+  width: 200px;
+  background-color:  aquamarine;
+  margin-bottom: 10px;
+}
+.button-click, .button-click-signup{
+  background-color: aqua;
+  background-color: aqua;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 15px;
+  text-align: center;
+}
+.button-click-signup{
+  margin-left: 45%;
+}
+input {
+  width: 100%;
+    border-radius: 4px;
+    border: 1px solid black;
+    background-color: antiquewhite;
+    height: 20px;
+    margin-bottom: 13px;
+}
+input::placeholder{
+  font-size: 15px;
+  color: black
+}
+.side-header{
+  background-color: aqua;
+  font-size:15px;
+  padding: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+  .first-grid-style{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:10px;
+  } 
+  .second-grid-style{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+}
