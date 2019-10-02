@@ -1,1 +1,44 @@
-GRIDS
+GRIDS ---
+
+1) Grid is 1D
+
+2) Parent Properties
+
+   display: grid;
+   grid-template-rows
+   grid-template-columns
+
+3) Child Properties
+
+   grid-column-start and grid-column-end 
+   grid-row-start and grid-row-end
+
+4) Flex is 2D
+
+5) The Two axes of Flex box --- main axis defined by flex-direction
+   row , row-reverse, column, column-reverse
+
+6) Flex and Grid Properties [ Parent ]
+
+   justify-content - flex-start(default) , flex-end, space-around, space-between, centre
+   Align-items: centre, flex-start, flex-end, stretch(default), baseline
+
+7) Flex and Grid Properties [ Children ]
+
+   Order : <number>[ default is 0 ]
+   Align-self: auto, flex-start, flex-end, centre, baseline, stretch
+
+8) flex-wrap: no wrap [ default ]
+   Wrap, no wrap, wrap-reverse
+
+9) flex-flow : Shorthand for flex-direction and flex-wrap
+   Flex-flow: <flex-direction> <flex-wrap>
+
+10) flex-shrink :<number>
+
+11) grid-area : Shorthand for <row><column>
+    Grid-area: row-start | column-start | row-end |column-end;
+
+12) grid-gap 
+    Grid-column-gap, grid-row-gap
+
