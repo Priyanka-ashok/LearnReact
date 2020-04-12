@@ -1,8 +1,5 @@
 # LearnReact
-CSS -- grid and flex
-
-
-React JS
-
-
-React Hooks 
+JQuery : 
+npm install live-server -g
+live-server or
+live-server --port-8000
